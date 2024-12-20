@@ -20,7 +20,6 @@ def detect_objects(image):
     
     return detected_objects
 
-import cv2
 
 def compare_images(reference_image_path, livestream_frame):
     """
