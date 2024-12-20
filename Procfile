@@ -1,0 +1,1 @@
+web: gunicorn Gamos.wsgi:application --log-file -
