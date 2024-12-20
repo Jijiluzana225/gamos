@@ -1,5 +1,5 @@
 from django.urls import path
-from django.detect.views import landing, video_feedx, contact
+from .views import landing, video_feedx, contact
 
 urlpatterns = [
     path('', landing, name='landing'),  # Landing page
