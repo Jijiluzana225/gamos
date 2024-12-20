@@ -1,8 +1,8 @@
 from django.urls import path
-from . import views
+from django.detect.views import landing, video_feedx, contact
 
 urlpatterns = [
-    path('', views.landing, name='landing'),  # Landing page
-    path('video_feed/', views.video_feedx, name='video_feed1'),  # Video feed
-    path('contact/', views.contact, name='contact'),  # Contact page
+    path('', landing, name='landing'),  # Landing page
+    path('video_feed/', video_feedx, name='video_feed1'),  # Video feed
+    path('contact/', contact, name='contact'),  # Contact page
 ]
